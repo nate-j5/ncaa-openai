@@ -136,6 +136,17 @@ export default function Home() {
             </div>
           )}
         </div>
+        <div className="absolute left-1/2 bottom-10 transform -translate-x-1/2 text-center text-xs text-gray-500">
+          <a
+            className="text-gray-500 text-xs hover:text-gray-400 transition"
+            href="https://github.com/nate-j5/ncaa-openai"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="View Code"
+          >
+            View Code ↗
+          </a>
+        </div>
       </div>
     </>
   );
