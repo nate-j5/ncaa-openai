@@ -12,14 +12,13 @@ export default function Home() {
   const [showDetails, setShowDetails] = useState(false);
   const [selectedAthlete, setSelectedAthlete] = useState(null);
   const [selectedSport, setSelectedSport] = useState(null);
-  const [aiSummary, setAiSummary] = useState("");
   const [schools, setSchools] = useState([]);
 
-  // Fetch schools data from JSON file
+  // Fetch schools data from API route
   useEffect(() => {
     const fetchSchools = async () => {
       try {
-        const response = await fetch("../../../data/schools.json");
+        const response = await fetch("/api/schools");
         const data = await response.json();
         setSchools(data);
       } catch (err) {
