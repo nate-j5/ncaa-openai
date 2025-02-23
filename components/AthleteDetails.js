@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import { ArrowLeft, Quote } from "lucide-react";
+import { ArrowLeft } from "lucide-react";
 
 const AthleteDetails = ({
   selectedAthlete,

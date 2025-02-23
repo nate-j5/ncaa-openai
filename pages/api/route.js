@@ -13,12 +13,12 @@ export default async function handler(req, res) {
     const { prompt } = req.body;
 
     const completion = await openai.chat.completions.create({
-      model: "gpt-3.5-turbo",
+      model: "gpt-4o-mini-2024-07-18",
       messages: [
         {
           role: "system",
           content:
-            "You are generating authentic student-athlete testimonials. Focus on specific experiences with the athletic program, team dynamics, coaching staff, and academic support. Include details about training, competition, and personal growth. Each response should flow naturally and end with a complete, meaningful concluding sentence. Always end with a period. Keep the tone thoughtful, realistic and casual.",
+            "You generate authentic student-athlete testimonials. Focus on specific experiences with the athletic program, team dynamics, coaching staff, and academic support. Include details about training, competition, and personal growth. Each response should flow naturally and end with a complete, meaningful concluding sentence. Always end with a period. Keep the tone thoughtful, realistic and casual.",
         },
         {
           role: "user",
@@ -27,9 +27,9 @@ export default async function handler(req, res) {
       ],
       temperature: 0.7,
       max_tokens: 250,
-      presence_penalty: 0.3, // Encourage more varied responses
-      frequency_penalty: 0.3, // Reduce repetition
-      stop: ["\n\n"], // Prevents multiple paragraphs at the end
+      presence_penalty: 0.3,
+      frequency_penalty: 0.3,
+      stop: ["\n\n"], // Prevent multiple paragraphs at the end
     });
 
     res.status(200).json({
