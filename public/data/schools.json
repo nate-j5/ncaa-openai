@@ -1,0 +1,167 @@
+[
+  {
+    "name": "University of California, Berkeley",
+    "location": "Berkeley, California",
+    "image": "/assets/cal.png",
+    "athletes": [
+      {
+        "name": "Emily Harris",
+        "sport": "Women's Basketball",
+        "graduationYear": "2024",
+        "hometown": "Los Angeles, California"
+      },
+      {
+        "name": "Chris Evans",
+        "sport": "Men's Basketball",
+        "graduationYear": "2025",
+        "hometown": "San Francisco, California"
+      },
+      {
+        "name": "Sarah Lee",
+        "sport": "Women's Volleyball",
+        "graduationYear": "2024",
+        "hometown": "Sacramento, California"
+      }
+    ],
+    "pros": [
+      "Prestigious reputation",
+      "Diverse campus"
+    ],
+    "cons": [
+      "High cost of living",
+      "Large class sizes"
+    ]
+  },
+  {
+    "name": "University of Iowa",
+    "location": "Iowa City, Iowa",
+    "image": "/assets/iowa.png",
+    "athletes": [
+      {
+        "name": "Caitlin Clark",
+        "sport": "Women's Basketball",
+        "graduationYear": "2024",
+        "hometown": "Des Moines, Iowa"
+      },
+      {
+        "name": "James Taylor",
+        "sport": "Men's Basketball",
+        "graduationYear": "2025",
+        "hometown": "Cedar Rapids, Iowa"
+      },
+      {
+        "name": "Lily Thompson",
+        "sport": "Women's Volleyball",
+        "graduationYear": "2025",
+        "hometown": "Sioux City, Iowa"
+      }
+    ],
+    "pros": [
+      "Strong athletic programs",
+      "Top D1 facilities"
+    ],
+    "cons": [
+      "Cold winters",
+      "Heavy party school"
+    ]
+  },
+  {
+    "name": "Harvard University",
+    "location": "Cambridge, Massachusetts",
+    "image": "/assets/harvard.png",
+    "athletes": [
+      {
+        "name": "Samantha Lee",
+        "sport": "Women's Basketball",
+        "graduationYear": "2024",
+        "hometown": "Boston, Massachusetts"
+      },
+      {
+        "name": "John Smith",
+        "sport": "Men's Basketball",
+        "graduationYear": "2025",
+        "hometown": "New York, New York"
+      },
+      {
+        "name": "Emma Davis",
+        "sport": "Women's Volleyball",
+        "graduationYear": "2024",
+        "hometown": "Chicago, Illinois"
+      }
+    ],
+    "pros": [
+      "World-class reputation",
+      "Elite athletic programs"
+    ],
+    "cons": [
+      "High tuition",
+      "High academic pressure"
+    ]
+  },
+  {
+    "name": "University of Texas",
+    "location": "Austin, Texas",
+    "image": "/assets/texas.png",
+    "athletes": [
+      {
+        "name": "Ashlynn Demps",
+        "sport": "Women's Basketball",
+        "graduationYear": "2024",
+        "hometown": "Los Angeles, California"
+      },
+      {
+        "name": "Ethan Wright",
+        "sport": "Men's Basketball",
+        "graduationYear": "2025",
+        "hometown": "Houston, Texas"
+      },
+      {
+        "name": "Laura Thomas",
+        "sport": "Women's Volleyball",
+        "graduationYear": "2025",
+        "hometown": "San Antonio, Texas"
+      }
+    ],
+    "pros": [
+      "Top-tier programs",
+      "Vibrant city life"
+    ],
+    "cons": [
+      "Hot summers",
+      "Large campus"
+    ]
+  },
+  {
+    "name": "University of West Florida",
+    "location": "Pensacola, Florida",
+    "image": "/assets/west-florida.png",
+    "athletes": [
+      {
+        "name": "Rachel Green",
+        "sport": "Women's Basketball",
+        "graduationYear": "2024",
+        "hometown": "Orlando, Florida"
+      },
+      {
+        "name": "Jake Turner",
+        "sport": "Men's Basketball",
+        "graduationYear": "2025",
+        "hometown": "Jacksonville, Florida"
+      },
+      {
+        "name": "Emily Adams",
+        "sport": "Women's Volleyball",
+        "graduationYear": "2025",
+        "hometown": "Tampa, Florida"
+      }
+    ],
+    "pros": [
+      "Warm weather",
+      "Strong sports"
+    ],
+    "cons": [
+      "Less-known academically",
+      "Limited internships"
+    ]
+  }
+]
