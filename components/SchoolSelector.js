@@ -18,6 +18,7 @@ const SchoolSelector = ({
           alt={selectedSchool ? selectedSchool.name : "NCAA logo"}
           width={80}
           height={80}
+          unoptimized 
         />
       </div>
 

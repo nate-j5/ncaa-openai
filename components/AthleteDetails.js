@@ -28,6 +28,7 @@ const AthleteDetails = ({
           alt={selectedSchool?.name || "School Logo"}
           width={80}
           height={80}
+          unoptimized 
         />
         <div className="text-center mt-4">
           <h2 className="text-2xl font-bold text-gray-900">
