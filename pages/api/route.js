@@ -1,19 +1,26 @@
 import OpenAI from "openai";
 
-const openai = new OpenAI({
-  apiKey: process.env.OPENAI_API_KEY,
-});
+export const config = {
+  runtime: "edge", 
+};
 
-export default async function handler(req, res) {
+export default async function handler(req) {
   if (req.method !== "POST") {
-    return res.status(405).json({ error: "Method not allowed" });
+    return new Response(JSON.stringify({ error: "Method not allowed" }), {
+      status: 405,
+      headers: { "Content-Type": "application/json" },
+    });
   }
 
   try {
-    const { prompt } = req.body;
+    const { prompt } = await req.json();
+
+    const openai = new OpenAI({
+      apiKey: process.env.OPENAI_API_KEY,
+    });
 
     const completion = await openai.chat.completions.create({
-      model: "gpt-4o-mini-2024-07-18",
+      model: "gpt-4o",
       messages: [
         {
           role: "system",
@@ -26,20 +33,26 @@ export default async function handler(req, res) {
         },
       ],
       temperature: 0.7,
-      max_tokens: 250,
+      max_tokens: 200, 
       presence_penalty: 0.3,
       frequency_penalty: 0.3,
-      stop: ["\n\n"], // Prevent multiple paragraphs at the end
+      stop: ["\n\n"],
     });
 
-    res.status(200).json({
-      result: completion.choices[0].message.content,
+    const responseText = completion?.choices?.[0]?.message?.content || "";
+
+    return new Response(JSON.stringify({ result: responseText }), {
+      status: 200,
+      headers: { "Content-Type": "application/json" },
     });
   } catch (error) {
     console.error("OpenAI API error:", error);
-    res.status(500).json({
-      error: "Failed to generate summary",
-      details: error.message,
-    });
+    return new Response(
+      JSON.stringify({ error: "Failed to generate summary", details: error.message }),
+      {
+        status: 500,
+        headers: { "Content-Type": "application/json" },
+      }
+    );
   }
 }

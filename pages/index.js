@@ -57,7 +57,7 @@ export default function Home() {
       // Generate random number between 1-10
       const randomNum = Math.floor(Math.random() * 10) + 1;
 
-      // Determine sentiment level based on random number
+      // Determine review sentiment level based on random number
       let sentimentLevel;
       if (randomNum <= 3) sentimentLevel = "less-favorable";
       else if (randomNum <= 6) sentimentLevel = "balanced";
